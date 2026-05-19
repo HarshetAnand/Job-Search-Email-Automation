@@ -8,13 +8,15 @@ from selenium.webdriver.support import expected_conditions as EC
 import pandas as pd
 import time
 
-# UW NetID credentials
-NETID = "UW_NETID"
-NETID_PASSWORD = "UW_PASSWORD"
+#from dotenv import load_dotenv
+import os
 
-# PitchBook credentials
-PITCHBOOK_EMAIL = "PITCHBOOK_EMAIL"
-PITCHBOOK_PASSWORD = "PITCHBOOK_PASSWORD"
+load_dotenv()
+
+NETID = os.environ.get("UW_NETID")
+NETID_PASSWORD = os.environ.get("UW_PASSWORD")
+PITCHBOOK_EMAIL = os.environ.get("PITCHBOOK_EMAIL")
+PITCHBOOK_PASSWORD = os.environ.get("PITCHBOOK_PASSWORD")
 
 # Search results page
 SEARCH_URL = "https://my-pitchbook-com.ezproxy.library.wisc.edu/search-results/s569449811/companies"
