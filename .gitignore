@@ -1,0 +1,4 @@
+.env
+__pycache__/
+*.pyc
+pitchbook_emails.csv
