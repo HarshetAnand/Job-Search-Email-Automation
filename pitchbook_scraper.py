@@ -7,8 +7,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import pandas as pd
 import time
-
-#from dotenv import load_dotenv
+from dotenv import load_dotenv
 import os
 
 load_dotenv()
